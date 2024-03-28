@@ -396,7 +396,7 @@ body {
 }
 
 .h-63 {
-    height: 63vh;
+    height: 67vh;
 }
 
 .section2-image {
@@ -405,6 +405,10 @@ body {
 
 .content {
     margin-left: 15px;
+}
+
+.nav3{
+    overflow-x: scroll;
 }
 
 .timeline-p {
