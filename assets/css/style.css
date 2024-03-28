@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+#body {
+    background-image: url(../images/body-bg.webp);
+}
+
+:root {
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-36: 36px;
+    --fs-50: 50px;
+    --fs-72: 72px;
+    --fs-80: 80px;
+    --fs-157: 157px;
+    --lh-150: 150%;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-900: 900;
+    --yellow-color: #FFD600;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --red-color: #FF1300;
+    --time-left: #00A106;
+    --execute-color: #70675F;
+}
+
+@font-face {
+    font-family: 'ModernoFBComp';
+    src: url('../modernofbcomp-semibold-maisfontes.c0b3/modernofbcomp-semibold.otf');
+}
+
+body {
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+.ff-noto {
+    font-family: "Noto Serif", serif;
+}
+
+.ff-modern {
+    font-family: 'ModernoFBComp';
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-14 {
+    font-size: var(--fs-14);
+}
+
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-36 {
+    font-size: var(--fs-36);
+}
+
+.fs-50 {
+    font-size: var(--fs-50);
+}
+
+.fs-72 {
+    font-size: var(--fs-72);
+}
+
+.fs-80 {
+    font-size: var(--fs-80);
+}
+
+.fs-157 {
+    font-size: var(--fs-157);
+}
+
+.lh-150 {
+    line-height: var(--lh-150);
+}
+
+.fw-300 {
+    font-weight: var(--fw-300);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-900 {
+    font-weight: var(--fw-900);
+}
+
+.yellow-color {
+    color: var(--yellow-color);
+}
+
+.black-bg {
+    background-color: var(--black-color);
+}
+
+.black-color {
+    color: var(--black-color);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+.red-color {
+    color: var(--red-color);
+}
+
+.mark-numb {
+    border: 1px solid var(--yellow-color);
+    padding: 3px 4px 3px 4px;
+    border-radius: 5px;
+}
+
+.mark-numb4 {
+    border: 1px solid var(--red-color);
+    padding: 3px 4px 3px 4px;
+    border-radius: 5px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.connect-wallet {
+    width: 165px;
+    height: 43px;
+    border: none;
+    outline: none;
+    background-color: var(--yellow-color);
+    border: 2px solid var(--black-color);
+}
+
+.hustlin-txt {
+    left: 0;
+}
+
+.hustlin-txt-or-social-icons-btn {
+    padding: 12px 0px;
+}
+
+.social-icons {
+    margin-right: 36px;
+}
+
+.nav3,
+.section1,
+.box-section2,
+.main-box-footer {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.list {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 2px solid var(--black-color);
+}
+
+.list5 {
+    border-right: 2px solid var(--black-color);
+}
+
+.sec2-txt {
+    padding: 64px 0;
+}
+
+.main-box-slick,
+.plus-mins-box {
+    outline: 2px solid var(--black-color);
+}
+
+.plus-mins-box {
+    max-width: 238px;
+}
+
+.border-left {
+    border-left: 2px solid var(--black-color);
+}
+
+.border-right {
+    border-right: 2px solid var(--black-color);
+}
+
+.slick-box1 {}
+
+.slick-p {
+    max-width: 327px;
+}
+
+.slick-box1 {
+    border-left: 2px solid var(--black-color);
+    padding: 48px 26px;
+}
+
+.slick-slide.slick-current.slick-active {
+    position: relative;
+    right: 2px;
+}
+
+.gap-55 {
+    gap: 55px;
+}
+
+.main-box-slick,
+.minting {
+    margin-bottom: 90px;
+}
+
+.mint-p {
+    max-width: 480px;
+}
+
+.mint-btn {
+    width: 111px;
+    height: 43px;
+    outline: none;
+    background-color: var(--yellow-color);
+    border: 2px solid var(--black-color);
+    margin-top: 35px;
+}
+
+.time-left {
+    color: var(--time-left);
+    margin-top: 36px;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
+.txt-box {
+    padding: 21px 0;
+}
+
+.main-box {
+    border-bottom: 2px solid var(--black-color);
+}
+
+.gap-116 {
+    gap: 116px;
+}
+
+.py-88 {
+    padding: 88px 0;
+}
+
+.pb-88 {
+    padding-bottom: 88px;
+}
+
+.timeline-box {
+    padding-bottom: 400px;
+    padding-top: 78px;
+}
+
+.section5 {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.arrow-svg {
+    position: absolute;
+    bottom: 78px;
+    left: 40px;
+    transform: translate(-5px, 12px);
+}
+
+.slick-box-1 {
+    border-left: 2px solid var(--black-color);
+}
+
+.crypto {
+    max-width: 407px;
+}
+
+/* timeline area */
+
+.section5::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--black-color);
+    top: 78px;
+    bottom: 78px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container1 {
+    padding: 10px 0px;
+    padding-left: 20px;
+    position: relative;
+    padding-right: 12px;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    right: -30px;
+    background-image: url(../images/timeline.png);
+    top: 0px;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -30px;
+}
+
+.accordian-h {
+    padding-top: 32px;
+    padding-bottom: 43px;
+}
+
+.accordian-box {
+    border-bottom: 2px solid var(--black-color);
+}
+
+.border-none {
+    border: none;
+}
+
+.all-accordian-content {
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.accordian-p {
+    display: none;
+}
+
+.footer {
+    padding-bottom: 32px;
+}
+
+.slick-box-1 {
+    background-image: url(../images/slick2.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 326px;
+    background-repeat: no-repeat;
+}
+
+.execute {
+    color: var(--execute-color);
+    background-color: transparent;
+    text-shadow: 1px 1px 1px var(--white-color);
+}
+
+.slick-slider2.slick-list.draggable {
+    right: -2px !important;
+}
+
+.slick-slider2 {
+    right: 0 !important;
+}
+
+.latest {
+    text-wrap: nowrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.h-63 {
+    height: 63vh;
+}
+
+.section2-image {
+    object-fit: cover;
+}
+
+.content {
+    margin-left: 15px;
+}
+
+.timeline-p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+
+    .section5::after {
+        left: 52px;
+    }
+
+    .container1 {
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    .container1::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slick-slider {
+        right: 2px;
+    }
+
+    .main-heading {
+        font-size: var(--fs-157);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .gap-md-68 {
+        gap: 68px;
+    }
+
+    .latest {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: var(--fs-50);
+    }
+
+    .community {
+        font-size: var(--fs-36);
+    }
+
+    .content {
+        margin-left: 45px;
+    }
+
+    .timeline-p {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .gap-178 {
+        gap: 178px;
+    }
+
+    .hustlin-txt {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sec2-txt {
+        font-size: var(--fs-72);
+    }
+
+    .border-lg-left {
+        border-left: 2px solid var(--black-color);
+    }
+
+    .border-lg-right {
+        border-right: 2px solid var(--black-color);
+    }
+
+    .border-right-lg-none {
+        border-right: none;
+    }
+
+    .latest {
+        margin-top: 90px;
+        font-size: var(--fs-80);
+        margin-bottom: 90px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .arrow-svg {
+        position: absolute;
+        left: 50%;
+        bottom: 78px;
+        transform: translate(-16px, 12px);
+    }
+}
+
+@media (min-width: 320px) {}
