@@ -137,12 +137,14 @@ body {
     border: 1px solid var(--yellow-color);
     padding: 3px 4px 3px 4px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .mark-numb4 {
     border: 1px solid var(--red-color);
     padding: 3px 4px 3px 4px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .gap-40 {
@@ -198,7 +200,15 @@ body {
 }
 
 .plus-mins-box {
-    max-width: 238px;
+    max-width: fit-content;
+}
+
+.twiter-svg:hover {
+    cursor: pointer;
+}
+
+.twiter-svg:hover svg path {
+    fill: var(--yellow-color);
 }
 
 .border-left {
@@ -289,7 +299,7 @@ body {
 .arrow-svg {
     position: absolute;
     bottom: 78px;
-    left: 40px;
+    left: 28px;
     transform: translate(-5px, 12px);
 }
 
@@ -401,7 +411,7 @@ body {
     margin-bottom: 30px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -421,15 +431,91 @@ body {
     text-align: justify;
 }
 
-.cross{
+.cross {
     position: relative;
     z-index: 2;
+    display: none;
+}
+
+.connect-wallet:hover,
+.mint-btn:hover {
+    animation-name: wallet;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: wallet;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+}
+
+.list a {
+    color: var(--black-color);
+}
+
+.list a:hover {
+    -webkit-text-stroke: medium;
+}
+
+.mins-box:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+    background-color: var(--black-color);
+}
+
+
+.plus-box:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+    background-color: var(--black-color);
+}
+
+.commen-icons {
+    transition: all 500ms linear;
+}
+
+.commen-icons:hover svg path {
+    fill: var(--yellow-color);
+}
+
+.commen-icons:hover {
+    position: relative;
+    bottom: 3px;
+}
+
+.prev:hover,
+.pre:hover,
+.next:hover,
+.nex:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+}
+
+@keyframes wallet {
+    0% {
+        box-shadow: 0px 5px 10px var(--yellow-color);
+    }
+
+    25% {
+        box-shadow: 5px 0px 10px var(--yellow-color);
+    }
+
+    50% {
+        box-shadow: 0px -5px 10px var(--yellow-color);
+    }
+
+    75% {
+        box-shadow: -5px 0px 10px var(--yellow-color);
+    }
+
+    100% {
+        box-shadow: 0px 5px 10px var(--yellow-color);
+    }
 }
 
 @media screen and (max-width: 576px) {
 
     .section5::after {
-        left: 52px;
+        left: 40px;
     }
 
     .container1 {
@@ -446,7 +532,7 @@ body {
 
     .left::after,
     .right::after {
-        left: 15px;
+        left: 4px;
     }
 
     .right {
@@ -459,6 +545,28 @@ body {
 
     .border-right {
         border-right: none;
+    }
+
+    .mint-p,.bs-p {
+        text-align: justify;
+    }
+
+    .mins-box {
+        border-left: 2px solid var(--black-color);
+    }
+
+    .plus-box {
+        border-right: 2px solid var(--black-color);
+    }
+
+    .sec2-txt {
+        text-align: center;
+        font-size: var(--fs-24);
+        padding: 12px;
+    }
+
+    .gap-116{
+        gap: 65px;
     }
 }
 
@@ -489,9 +597,18 @@ body {
         margin-bottom: 33px;
         margin-right: 0;
     }
+
+    .slick-txt1 {
+        font-size: var(--fs-30);
+    }
 }
 
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+    .main-heading {
+        font-size: var(--fs-36);
+        margin: 20px 0;
+    }
+}
 
 @media (min-width: 576px) {
     .arrow-svg {
@@ -515,6 +632,10 @@ body {
 
     .accordian-h {
         font-size: var(--fs-24);
+    }
+
+    .minting {
+        font-size: var(--fs-80);
     }
 }
 
@@ -558,12 +679,13 @@ body {
         font-size: var(--fs-50);
     }
 
-    .road {
+    .road,.faq,.team {
         font-size: var(--fs-80);
     }
 
-    .team {
+    .main-heading {
         font-size: var(--fs-80);
+        margin: 20px 0;
     }
 }
 

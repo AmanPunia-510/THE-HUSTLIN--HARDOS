@@ -121,13 +121,34 @@ let dots = document.querySelector(".three-dots");
 
 dots.addEventListener("click", () => {
     let navbar_content = document.querySelector(".btn-or-social-icons");
-    navbar_content.classList.toggle("show");
+    navbar_content.classList.add("show");
 })
 
-if (navbar_content.classList.toggle("show")) {
-    const x = document.querySelector(".cross");
-    x.setAttribute("class", "d-block")
-}
-else {
+const x = document.querySelector(".cross");
 
-}
+x.addEventListener("click", () => {
+    let navbar_content = document.querySelector(".btn-or-social-icons");
+    navbar_content.classList.remove("show");
+})
+
+// mint box
+const plus = document.querySelector(".mins-box");
+const mins = document.querySelector(".plus-box");
+const soo = document.querySelector(".hunderd-box");
+
+// Initial value
+let value = 100;
+soo.innerHTML = value;
+
+plus.addEventListener("click", () => {
+    value++;
+    soo.innerHTML = value;
+});
+
+soo.innerHTML = value;
+
+mins.addEventListener("click", () => {
+    value--;
+    soo.innerHTML = value;
+});
+
