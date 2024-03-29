@@ -372,10 +372,7 @@ body {
 .all-accordian-content {
     padding-left: 30px;
     padding-right: 40px;
-}
 
-.accordian-p {
-    display: none;
 }
 
 .footer {
@@ -547,7 +544,8 @@ body {
         border-right: none;
     }
 
-    .mint-p,.bs-p {
+    .mint-p,
+    .bs-p {
         text-align: justify;
     }
 
@@ -565,7 +563,7 @@ body {
         padding: 12px;
     }
 
-    .gap-116{
+    .gap-116 {
         gap: 65px;
     }
 }
@@ -679,7 +677,9 @@ body {
         font-size: var(--fs-50);
     }
 
-    .road,.faq,.team {
+    .road,
+    .faq,
+    .team {
         font-size: var(--fs-80);
     }
 
