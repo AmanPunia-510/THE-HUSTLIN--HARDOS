@@ -489,6 +489,10 @@ body {
     color: var(--yellow-color);
 }
 
+.three-dots{
+    cursor: pointer;
+}
+
 @keyframes wallet {
     0% {
         box-shadow: 0px 5px 10px var(--yellow-color);
