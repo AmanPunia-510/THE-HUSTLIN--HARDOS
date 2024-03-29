@@ -115,4 +115,19 @@ window.onload = function () {
     startTimer(duration, display);
 };
 
-// accordian
+// navbar
+
+let dots = document.querySelector(".three-dots");
+
+dots.addEventListener("click", () => {
+    let navbar_content = document.querySelector(".btn-or-social-icons");
+    navbar_content.classList.toggle("show");
+})
+
+if (navbar_content.classList.toggle("show")) {
+    const x = document.querySelector(".cross");
+    x.setAttribute("class", "d-block")
+}
+else {
+
+}
