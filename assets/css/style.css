@@ -429,9 +429,11 @@ body {
 }
 
 .cross {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    display: none;
+    right: 25px;
+    top: 25px;
+    font-size: var(--fs-36);
 }
 
 .connect-wallet:hover,
@@ -509,7 +511,7 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.1px) {
 
     .section5::after {
         left: 40px;
@@ -545,7 +547,8 @@ body {
     }
 
     .mint-p,
-    .bs-p {
+    .bs-p,
+    .accordian-p {
         text-align: justify;
     }
 
@@ -568,7 +571,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.1px) {
     .btn-or-social-icons {
         position: fixed;
         top: 0;
@@ -598,6 +601,10 @@ body {
 
     .slick-txt1 {
         font-size: var(--fs-30);
+    }
+
+    .pb-88{
+        padding-bottom: 0 !important;
     }
 }
 
